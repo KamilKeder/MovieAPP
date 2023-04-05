@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wyszukiwarka Filmów</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../png/wyszukiwarkafilmow.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../png/wyszukiwarkafilmow.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../png/wyszukiwarkafilmow.png">
+<link rel="manifest" href="../../png/wyszukiwarkafilmow.png">
+<link rel="mask-icon" href="../../png/wyszukiwarkafilmow.png" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div id="container_app" class="card">
+	<div class="card-header">
+		Wyszukiwarka Filmów
+	</div>
+<div class="card-body">
+	Wpisz nazwę filmu
+<input type="text" name="" id="input_nazwa">
+<button class="btn btn-success" id="button_szukaj">Wyszukaj</button>
+
+
+<div id="div_wyniki" class="ukryty">
+	
+<table class="table" id="table_tabela">
+	<thead>
+		<tr>
+			<th>
+				Okładka
+			</th>
+			<th>
+				Nazwa
+			</th>
+			<th>
+				Popularność
+			</th>
+			<th>
+				Data Premiery
+			</th>
+			<th>
+				Link
+			</th>
+		</tr>
+	</thead>
+	<tbody id="tbody_wyniki">
+
+	</tbody>
+</table>
+</div>
+</div>
+<div class="card-footer">
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#info">Informacje o aplikacji</button>
+</div>
+</div>
+
+
+<div class="modal fade" id="info" tabindex="-1" aria-labelledby="infoinfo" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="infoinfo">Informacje o aplikacji</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  <h5 class="mb-2">O aplikacji</h5>
+			Aplikacja umożliwia użytkownikom wyszukiwanie filmów na podstawie wpisanego tytułu oraz prezentuje najważniejsze informacje dotyczące danego filmu. Po wyświetleniu wyników, użytkownik może zdecydować, czy chce poznać więcej szczegółów, klikając odpowiedni przycisk. Tam zostanie mu przedstawiony krótki opis oraz najważniejsze informacje o filmie. Ponadto, użytkownik ma możliwość przeniesienia się na stronę The Movie Database, aby zapoznać się z dodatkowymi informacjami na temat wybranego filmu.
+			Aplikacja wykorzystuje API The Move Database API.
+			<h5 class="mt-2">Technologie</h5>
+			HTML, CSS, JavaScript, API, Bootstrap
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Zamknij</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
